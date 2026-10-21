@@ -1,0 +1,317 @@
+body
+{
+  margin:0;
+  padding:0;
+  background:black;
+  color:white;
+}
+
+.top,.box,.slide,.bigslide,#editorView,.top b,
+.box h2,.box p,#markdownInput,button,
+.bottomline,.stage,.buttons,#presentationView,.buttons span
+{
+  box-sizing:border-box;
+}
+
+.top
+{
+  background:black;
+  border-bottom:2px solid orange;
+  padding:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.top b
+{
+  color:orange;
+  font-size:20px;
+}
+
+.right
+{
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+
+#saveStatus
+{
+  color:gray;
+  font-size:12px;
+  font-family:Arial;
+}
+
+button
+{
+  background:black;
+  color:orange;
+  border:1px solid orange;
+  padding:8px 12px;
+  cursor:pointer;
+  font-family:"Trebuchet MS",sans-serif;
+  font-size:13px;
+}
+
+button:hover
+{
+  background:orange;
+  color:black;
+}
+
+button:disabled
+{
+  opacity:0.3;
+  cursor:not-allowed;
+}
+
+#presentBtn
+{
+  background:orange;
+  color:black;
+  font-weight:bold;
+}
+
+#presentBtn:hover
+{
+  background:white;
+}
+
+#editorView
+{
+  padding:14px;
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.box
+{
+  border:1px solid orange;
+  margin-bottom:16px;
+}
+
+.box h2
+{
+  margin:0;
+  padding:10px 12px;
+  font-family:Georgia,serif;
+  font-size:17px;
+  color:orange;
+  border-bottom:1px solid orange;
+}
+
+.box p
+{
+  margin:0;
+  padding:4px 12px;
+  font-size:12px;
+  color:gray;
+  font-family:Arial;
+}
+
+#markdownInput
+{
+  width:100%;
+  min-height:230px;
+  background:black;
+  color:white;
+  border:none;
+  outline:none;
+  padding:12px;
+  font-family:"Courier New",monospace;
+  font-size:14px;
+  line-height:1.5;
+  resize:vertical;
+}
+
+.bottomline
+{
+  display:flex;
+  justify-content:space-between;
+  border-top:1px solid gray;
+  padding:5px 12px;
+  font-size:11px;
+  color:gray;
+  font-family:Arial;
+}
+
+.stage
+{
+  padding:16px;
+  background:black;
+  display:flex;
+  justify-content:center;
+}
+
+.slide
+{
+  background:white;
+  color:black;
+  width:100%;
+  max-width:820px;
+  aspect-ratio:16/9;
+  padding:24px;
+  border:1px solid gray;
+  overflow:auto;
+}
+
+.slide h1
+{
+  font-family:"Times New Roman",serif;
+  font-size:28px;
+  margin:0 0 10px;
+}
+
+.slide h2
+{
+  font-family:Impact,sans-serif;
+  font-size:21px;
+  font-weight:normal;
+  margin:0 0 10px;
+  color:black;
+}
+
+.slide h3
+{
+  font-family:"Brush Script MT",cursive;
+  font-size:19px;
+  margin:6px 0;
+}
+
+.slide h4
+{
+  font-family:"Trebuchet MS",sans-serif;
+  font-size:16px;
+  margin:6px 0;
+  color:black;
+}
+
+.slide h5
+{
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  margin:6px 0;
+  color:#333;
+}
+
+.slide h6
+{
+  font-family:Verdana,sans-serif;
+  font-size:13px;
+  margin:6px 0;
+  color:#555;
+}
+
+.slide p
+{
+  font-family:"Segoe UI",sans-serif;
+  font-size:14px;
+  color:#333;
+  margin:6px 0;
+}
+
+.slide li
+{
+  font-family:"Segoe UI",sans-serif;
+  font-size:14px;
+  color:#333;
+}
+
+.slide ul,
+.slide ol
+{
+  padding-left:20px;
+  margin:6px 0;
+}
+
+.slide blockquote
+{
+  border-left:3px solid orange;
+  padding-left:10px;
+  color:gray;
+  font-style:italic;
+  font-family:Georgia,serif;
+  margin:8px 0;
+}
+
+.empty-slide
+{
+  color:gray;
+  font-style:italic;
+  font-family:Arial;
+}
+
+.buttons
+{
+  display:flex;
+  gap:6px;
+  align-items:center;
+  padding:8px 12px;
+  border-top:1px solid orange;
+}
+
+.buttons span
+{
+  margin-left:auto;
+  color:orange;
+  font-family:"Courier New",monospace;
+  font-size:13px;
+}
+
+#presentationView
+{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:black;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+}
+
+.bigslide
+{
+  flex:1;
+  max-width:none;
+  aspect-ratio:auto;
+  padding:40px;
+}
+
+.bigslide h1
+{
+  font-size:40px;
+}
+
+.bigslide h2
+{
+  font-size:30px;
+}
+
+.bigslide h3
+{
+  font-size:24px;
+}
+
+.bigslide h4
+{
+  font-size:20px;
+}
+
+.bigslide h5
+{
+  font-size:17px;
+}
+
+.bigslide h6
+{
+  font-size:15px;
+}
+
+.bigslide p,
+.bigslide li
+{
+  font-size:18px;
+}
